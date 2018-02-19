@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Materialize -->
+  <link rel="stylesheet" href="vendors/materialize/css/materialize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Credit Card Validator</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-s12">
+          <div>
+            <h1>Credit Card Validator</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <!-- nombre -->
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">mode_edit</i>
+              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <label for="icon_prefix2">Your name</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- tipo de tarjeta -->
+      <div class="row">
+        <div class="col s12">
+          <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Choose your Credit Card</option>
+              <option value="1">Visa</option>
+              <option value="2">Master Card</option>
+              <option value="3">Dinners Club</option>
+            </select>
+            <label>Choose your Credit Card</label>
+          </div>
+        </div>
+      </div>
+      <!-- Input para número de tarjeta -->
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6" id="credit-card-number">
+              <i class="material-icons prefix">mode_edit</i>
+              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <label for="icon_prefix2">Credit Card Number</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <!-- Jquery -->
+  <script src="vendors/jquery/jquery.min.js"></script>
+  <!-- Materialize -->
+  <script src="vendors/materialize/js/materialize.min.js"></script>
+  <!-- archivo js -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
